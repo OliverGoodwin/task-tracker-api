@@ -11,8 +11,12 @@ class Task(BaseModel):
 def home():
     return {"message": "API is running!"}
 
-tasks = []
-next_id = 1
+tasks = [
+    {"id": 1, "title": "Learn FastAPI", "done": False},
+    {"id": 2, "title": "Finish project", "done": False}
+]
+next_id = 3
+
 
 @app.get("/tasks")
 def get_tasks():
