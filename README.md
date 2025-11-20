@@ -12,7 +12,7 @@ This was created to get an understanding of CRUD and pydantic, as well as APIs a
 - Input validation with Pydantic
 - Interactive API documentation with Swagger UI
 
-### **Requirements**
+## **Requirements**
 
 - FastAPI
 - Uvicorn
