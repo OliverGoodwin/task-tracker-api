@@ -7,7 +7,7 @@ def home():
     return {"message": "API is running!"}
 
 tasks = []
-nextID = 1
+next_id = 1
 
 @app.get("/tasks")
 def get_tasks():
@@ -15,9 +15,9 @@ def get_tasks():
 
 @app.post("/tasks")
 def create_task(task: dict):
-    global nextID
-    task['id'] = nextID
-    nextID += 1
+    global next_id
+    task['id'] = next_id
+    next_id += 1
     tasks.append(task)
     return task
 
